@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// Tìm lặp
 bool soLap(int a[], int n){
     for(int i = 0; i < n; i++){
         for(int j = 0; j < i; j++){

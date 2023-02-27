@@ -1,20 +1,18 @@
 #include<iostream>
 #include<string>
 using namespace std;
-bool XauDoiXung(string S){
-    int i = 0;
-    int j = S.length() - 1;
-    while(true){
-        if( S[i] != S[j]) return false;
-            i++;
-            j--;
-        if( i ==j ) break;
-    }
-    return true;
+// Xâu đối xứng
+bool Xaudoixung(string s){
+	int n = s.length();
+	for(int i=0; i<=n/2; i++){
+		if(s[i]!=s[n-i-1]) return false;
+	}
+	return true;
 }
 int main(){
-    string S;
-    getline(cin, S);
-    cout << XauDoiXung(S);
-    return 0;
+	string s;
+	getline(cin,s);
+	if(Xaudoixung(s)) cout << "YES";
+	else cout << "NO";
+	
 }
