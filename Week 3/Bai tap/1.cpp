@@ -1,6 +1,9 @@
 #include<iostream>
 #include<cmath>
 using namespace std;
+int BinarySortInsertion(a[] ,int n){
+    
+}
 int main()
 {
     int n; cin >> n;
@@ -14,10 +17,9 @@ int main()
         tmp--;
         i++;
     }
+    sort(Male, Male + n);
+    sort(feMale, feMale + n);
     
-    for (int j = 0; j < n; j++){
-        cout << Male[j] << " " << feMale[j];
-    }
     return 0;
 } // namespace std;
 
